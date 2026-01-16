@@ -20,3 +20,16 @@
     }
   }
 }
+
+@mixin brand-btn {
+  width: 138px;
+  height: 48px;
+  font-weight: $fw-ultrabold;
+  font-size: $fs-14;
+  border-radius: $radius-6;
+  border: none;
+  color: $text-dark;
+  background: $background-btn;
+  box-shadow: 0px 3px 9px 0px rgb($text-dark, $opacity-8);
+  cursor: pointer;
+}

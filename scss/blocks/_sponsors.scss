@@ -1,0 +1,28 @@
+.sponsors {
+  padding-top: 73px;
+  padding-bottom: 101px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: $border-1 solid $border-card-light;
+    padding-bottom: 72px;
+  }
+
+  &__img {
+    flex-shrink: 0;
+  }
+
+  @include respond(tablet) {
+    padding-top: 47px;
+    padding-bottom: 71px;
+
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 30px;
+      column-gap: 45px;
+    }
+  }
+}

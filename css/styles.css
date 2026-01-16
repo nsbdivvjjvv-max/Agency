@@ -254,4 +254,123 @@ body {
     padding-left: 0px;
     line-height: 32px;
   }
+}
+.sponsors {
+  padding-top: 73px;
+  padding-bottom: 101px;
+}
+.sponsors__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F3D1BF;
+  padding-bottom: 72px;
+}
+.sponsors__img {
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .sponsors {
+    padding-top: 47px;
+    padding-bottom: 71px;
+  }
+  .sponsors__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    -moz-column-gap: 45px;
+         column-gap: 45px;
+  }
+}
+
+.experience {
+  padding-bottom: 161px;
+}
+.experience__box {
+  display: flex;
+  justify-content: end;
+  background-image: url(../../images/experience-img-bg.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.experience__list {
+  max-width: 470px;
+  padding-top: 70px;
+  padding-bottom: 79px;
+}
+.experience__tag {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  color: #EF6D58;
+  margin-bottom: 20px;
+}
+.experience__title {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #391400;
+  margin-bottom: 26px;
+}
+.experience__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #391400;
+  margin-bottom: 18px;
+}
+.experience__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+  margin-bottom: 34px;
+}
+.experience__btn {
+  width: 138px;
+  height: 48px;
+  font-weight: 900;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  color: #391400;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 9px 0px rgba(57, 20, 0, 0.08);
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .experience {
+    padding-bottom: 112px;
+  }
+  .experience__box {
+    background-size: 500px 530px;
+    background-position: 25px top;
+  }
+  .experience__list {
+    padding-top: 540px;
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .experience__box {
+    background-size: 329px 340px;
+    background-position: top center;
+  }
+  .experience__list {
+    padding-top: 360px;
+  }
+  .experience__tag {
+    margin-bottom: 17px;
+  }
+  .experience__title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    margin-bottom: 29px;
+  }
+  .experience__text {
+    margin-bottom: 32px;
+  }
 }/*# sourceMappingURL=styles.css.map */
