@@ -1,12 +1,11 @@
 .projects {
-  padding-bottom: 108px;
-
   &__list {
     display: flex;
     align-items: center;
     gap: 130px;
+    border-bottom: $border-1 solid $border-card-light;
+    padding-bottom: 108px;
   }
-
 }
 
 .project {
@@ -80,5 +79,52 @@
 
   &__service {
     padding-left: 13px;
+  }  
+}
+
+@include respond(tablet) {
+  .projects__list {
+    gap: 100px;
+  }
+
+  .project {
+    &__feature-item {
+      gap: 33px;
+    }
+
+    &__number {
+      font-size: $fs-40;
+    }
+  } 
+}
+
+@include respond(mobile) {
+  .projects {
+    &__list {
+      flex-direction: column;
+      gap: 130px;
+    }
+  }
+
+  .project {
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__subtitle {
+      margin-bottom: 32px;
+    }
+
+    &__feature-item {
+      gap: 53px;
+    }
+
+    &__feature-item {
+      gap: 25px;
+    }
+
+    &__number {
+      font-size: $fs-72;
+    }
   }
 }

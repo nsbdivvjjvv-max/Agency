@@ -1,0 +1,101 @@
+.look {
+  padding-bottom: 202px;
+
+  &__list {
+    background-image: url(../../images/look-img-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  &__content {
+    max-width: 470px;
+    padding-top: 77px;
+    padding-bottom: 42px;
+  }
+
+  &__tag {
+    font-weight: $fw-regular;
+    font-size: $fs-16;
+    line-height: 32px;
+    letter-spacing: 3px;
+    color: $text-dark-accent;
+    margin-bottom: 20px;
+  }
+  
+  &__title {
+    max-width: 397px;
+    font-weight: $fw-extrabold;
+    font-size: $fs-56;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: $text-dark;
+    margin-bottom: 26px;
+  }
+
+  &__subtitle {
+    font-weight: $fw-regular;
+    font-size: $fs-20;
+    line-height: 32px;
+    color: $text-dark;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.feature {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgb($text-dark-gray,$opacity-64);
+  }
+}
+
+@include respond(laptop) {
+  .look {
+    padding-bottom: 130px;
+
+    &__content {
+      padding-top: 530px;
+    }
+  }
+}
+
+@include respond(mobile) {
+  .look {
+    &__list {
+      background-size: 329px 328px;
+      background-position: top center;
+    }
+
+    &__content {
+      padding-top: 320px;
+    }
+    
+    &__tag {
+      margin-bottom: 17px;
+    }
+
+    &__title {
+      max-width: 294px;
+      font-size: $fs-40;
+      line-height: 48px;
+      margin-bottom: 13px;
+    }
+
+    &__subtitle {
+      margin-bottom: 30px;
+    }
+  }
+}
