@@ -669,4 +669,200 @@ body {
   .look__subtitle {
     margin-bottom: 30px;
   }
+}
+.services {
+  padding-bottom: 213px;
+}
+.services__container {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+.services__intro {
+  max-width: 370px;
+  padding-top: 76px;
+}
+.services__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  color: #EF6D58;
+  margin-bottom: 30px;
+}
+.services__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #391400;
+  margin-bottom: 28px;
+}
+.services__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #391400;
+  text-decoration: none;
+}
+
+.services__cards {
+  display: flex;
+  align-items: end;
+}
+
+.service__card-first {
+  padding: 48px 48px 46px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #FFFFFF;
+  border: 1px solid #F3D1BF;
+  box-shadow: 0px 32px 64px 0px rgba(57, 20, 0, 0.04);
+}
+.service__card-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #EF6D58;
+  margin-bottom: 41px;
+}
+.service__card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #391400;
+  margin-bottom: 19px;
+}
+.service__card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+}
+.service__card-second {
+  padding: 105px 48px 46px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: 1px solid #F3D1BF;
+}
+
+@media (max-width: 992px) {
+  .services__container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .services__intro {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .services {
+    padding-bottom: 112px;
+  }
+  .services__container {
+    gap: 36px;
+  }
+  .services__cards {
+    flex-direction: column;
+  }
+  .service__card-first {
+    border-bottom-left-radius: 0px;
+  }
+  .service__card-second {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+  }
+}
+.digital__product-wrapper {
+  display: flex;
+  justify-content: end;
+  background-image: url(../../images/digital-product-img.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-bottom: 141px;
+}
+.digital__product-content {
+  max-width: 470px;
+  padding-top: 39px;
+  padding-bottom: 47px;
+}
+.digital__product-service {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  color: #EF6D58;
+  margin-bottom: 20px;
+}
+.digital__product-title {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #391400;
+  margin-bottom: 26px;
+}
+.digital__product-description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #391400;
+  margin-bottom: 31px;
+}
+.digital__product-review {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.digital__product-review-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(57, 20, 0, 0.64);
+  margin-bottom: 12px;
+}
+.digital__product-review-author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #391400;
+}
+.digital__product-btn {
+  width: 138px;
+  height: 48px;
+  font-weight: 900;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  color: #391400;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 9px 0px rgba(57, 20, 0, 0.08);
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .digital__product-wrapper {
+    background-size: 420px 430px;
+    padding-bottom: 124px;
+  }
+  .digital__product-content {
+    padding-top: 450px;
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .digital__product-wrapper {
+    background-size: 329px 327px;
+    background-position: top center;
+  }
+  .digital__product-content {
+    padding-top: 340px;
+  }
+  .digital__product-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }/*# sourceMappingURL=styles.css.map */

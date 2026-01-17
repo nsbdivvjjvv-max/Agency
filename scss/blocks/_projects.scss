@@ -71,8 +71,8 @@
   }
 
   &__feature-text {
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: $fw-bold;
+    font-size: $fs-24;
     line-height: 32px;
     color: $text-dark;
   }

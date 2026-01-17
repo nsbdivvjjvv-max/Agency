@@ -55,8 +55,8 @@
   }
   
   &__text {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: $fw-regular;
+    font-size: $fs-16;
     line-height: 32px;
     color: rgb($text-dark-gray,$opacity-64);
   }

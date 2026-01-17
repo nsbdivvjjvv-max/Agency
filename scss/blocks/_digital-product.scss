@@ -1,0 +1,96 @@
+.digital__product {  
+  &-wrapper {
+    display: flex;
+    justify-content: end;
+    background-image: url(../../images/digital-product-img.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-bottom: 141px;
+  }
+
+  &-content {
+    max-width: 470px;
+    padding-top: 39px;
+    padding-bottom: 47px;
+  }
+
+  &-service {
+    font-weight: $fw-regular;
+    font-size: $fs-16;
+    line-height: 32px;
+    letter-spacing: 3px;
+    color: $text-dark-accent;
+    margin-bottom: 20px;
+  }
+
+  &-title {
+    font-weight: $fw-extrabold;
+    font-size: $fs-56;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: $text-dark;
+    margin-bottom: 26px;
+  }
+
+  &-description {
+    font-weight: $fw-regular;
+    font-size: $fs-20;
+    line-height: 32px;
+    color: $text-dark;
+    margin-bottom: 31px;
+  }
+
+  &-review {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 36px;
+
+    &-paragraph {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgb($text-dark-gray,$opacity-64);
+      margin-bottom: 12px;
+    }
+
+    &-author {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: $text-dark;
+    }
+  }
+
+  &-btn {
+    @include brand-btn;
+  }
+
+  @include respond(laptop) {
+    &-wrapper {
+      background-size: 420px 430px;
+      padding-bottom: 124px;
+    }
+
+    &-content {
+      padding-top: 450px;
+      padding-bottom: 0px;
+    }
+  }
+
+  @include respond(mobile) {
+    &-wrapper {
+      background-size: 329px 327px;
+      background-position: top center;
+    }
+
+    &-content {
+      padding-top: 340px;
+    }
+
+    &-title {
+      font-size: $fs-40;
+      line-height: 48px;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.services {
+  padding-bottom: 213px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+  }
+
+  &__intro {
+    max-width: 370px;
+    padding-top: 76px;
+  }
+
+  &__label {
+    font-weight: $fw-regular;
+    font-size: $fs-16;
+    line-height: 32px;
+    letter-spacing: 3px;
+    color: $text-dark-accent;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: $fw-regular;
+    font-size: $fs-20;
+    line-height: 32px;
+    color: $text-dark;
+    margin-bottom: 28px;
+  }
+
+  &__link {
+    font-weight: $fw-regular;
+    font-size: $fs-16;
+    line-height: 32px;
+    color: $text-dark;
+    text-decoration: none;
+  }
+}
+
+.services__cards {
+  display: flex;
+  align-items: end;
+}
+
+.service {
+  &__card-first {
+    padding: 48px 48px 46px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: $text-light;
+    border: $border-1 solid $border-card-light;
+    box-shadow: 0px 32px 64px 0px rgb($text-dark,$opacity-4);
+  }
+
+  &__card-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $text-dark-accent;
+    margin-bottom: 41px;
+  }
+
+  &__card-title {
+    font-weight: $fw-bold;
+    font-size: $fs-24;
+    line-height: 32px;
+    color: $text-dark;
+    margin-bottom: 19px;
+  }
+
+  &__card-text {
+    font-weight: $fw-regular;
+    font-size: $fs-16;
+    line-height: 32px;
+    color: rgb($text-dark-gray,$opacity-64);
+  }
+
+  &__card-second {
+    padding: 105px 48px 46px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: $border-1 solid $border-card-light;
+  }
+}
+
+@include respond(laptop) {
+  .services {
+    &__container {
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    &__intro {
+      padding-top: 0px;
+    }
+  }
+}
+
+@include respond(mobile) {
+  .services {
+    padding-bottom: 112px;
+
+    &__container {
+      gap: 36px;
+    }
+
+    &__cards {
+      flex-direction: column;
+
+    }
+  }
+
+  .service {
+    &__card-first {
+      border-bottom-left-radius: 0px;
+    }
+
+    &__card-second {
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 6px;
+    }
+  }
+}
