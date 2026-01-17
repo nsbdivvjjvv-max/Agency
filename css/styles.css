@@ -373,4 +373,122 @@ body {
   .experience__text {
     margin-bottom: 32px;
   }
+}
+
+.stats {
+  padding-bottom: 140px;
+}
+.stats__list {
+  border-radius: 6px;
+  border: 1px solid #F3D1BF;
+  overflow: hidden;
+}
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stat__item {
+  padding: 45px 48px 38px;
+}
+.stat__item:nth-child(1), .stat__item:nth-child(2) {
+  border-right: 1px solid #F3D1BF;
+}
+.stat__number {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  color: #391400;
+  margin-bottom: 13px;
+}
+.stat__label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #391400;
+}
+
+.stats {
+  padding-bottom: 94px;
+}
+@media (max-width: 576px) {
+  .stats__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.stat__item:nth-child(2), .stat__item:nth-child(3) {
+  border-top: 1px solid #F3D1BF;
+}
+
+.projects {
+  padding-bottom: 108px;
+}
+.projects__list {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.project__left-column {
+  max-width: 470px;
+}
+.project__tag {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #EF6D58;
+  margin-bottom: 17px;
+}
+.project__title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  color: #391400;
+  margin-bottom: 32px;
+}
+.project__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+  margin-bottom: 28px;
+}
+.project__btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #391400;
+  background-color: transparent;
+  border: none;
+}
+.project__right-column {
+  max-width: 502px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+}
+.project__feature-item {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+.project__number {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  color: #391400;
+}
+.project__feature-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #391400;
+}
+.project__service {
+  padding-left: 13px;
 }/*# sourceMappingURL=styles.css.map */
