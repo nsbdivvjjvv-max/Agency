@@ -1,0 +1,98 @@
+.agency {
+  padding-bottom: 128px;
+
+  &__label {
+    font-weight: $fw-regular;
+    font-size: $fs-16;
+    line-height: 32px;
+    letter-spacing: 3px;
+    color: $text-dark-accent;
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    max-width: 336px;
+    font-weight: $fw-extrabold;
+    font-size: $fs-40;
+    line-height: 48px;
+    color: $text-dark;
+    margin-bottom: 35px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    border-radius: $radius-6;
+    border: $border-1 solid $border-card-light;
+  }
+
+  &__card {
+    padding: 48px 48px 52px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-right: $border-1 solid $border-card-light;
+    }
+  }
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $text-dark-accent;
+    margin-bottom: 41px;
+  }
+
+  &__heading {
+    font-weight: $fw-bold;
+    font-size: $fs-24;
+    line-height: 32px;
+    color: $text-dark;
+    margin-bottom: 19px;
+  }
+
+  &__text {
+    font-weight: $fw-regular;
+    font-size: $fs-16;
+    line-height: 32px;
+    color: rgb($text-dark-gray,$opacity-64);
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    font-weight: $fw-regular;
+    font-size: $fs-16;
+    line-height: 32px;
+    color: $text-dark;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @include respond(laptop) {
+    &__grid {
+      grid-template-columns:repeat(1,1fr);
+    }
+
+    &__card {
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-bottom: $border-1 solid $border-card-light;
+      }
+    }
+  }
+
+  @include respond(mobile) {
+    padding-bottom: 114px;
+
+    &__title {
+      letter-spacing: -1px;
+    }
+
+    &__card {
+      padding: 48px 28px 51px;
+    }
+  }
+}
